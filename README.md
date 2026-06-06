@@ -3,7 +3,7 @@
 Get a sound notification when your long-running task finishes.
 
 Dingdone is a lightweight Python CLI tool that plays a sound when a command completes.
-You can use a custom sound or the default beep.
+You can use a custom sound or the default beep.loop stops after current playback finishes
 
 ## Features
 - Run any command and get sound when it's done
