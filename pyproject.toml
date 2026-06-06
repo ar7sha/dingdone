@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dingdone"
-version = "0.1"
+version = "1.0.0"
 authors = [{ name = "arsha", email = "ar7sh11@proton.me" }]
 description = "Get a sound notification when your long command finishes"
 readme = "README.md"
@@ -18,3 +18,4 @@ dingdone = "dingdone.main:main"
 ding = "dingdone.main:main"
 [tool.hatch.build.targets.wheel]
 packages = ["src/dingdone"]
+dependencies = ["playsound"]
