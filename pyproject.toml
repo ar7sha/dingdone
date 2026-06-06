@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dingdone"
+version = "0.1"
+authors = [{ name = "arsha", email = "ar7sh11@proton.me" }]
+description = "Get a sound notification when your long command finishes"
+readme = "README.md"
+requires-python = ">=3"
+[project.urls]
+"Homepage" = "https://github.com/ar7sha/dingdone"
+"Bug Reports" = "https://github.com/ar7sha/dingdone/issues"
+[project.scripts]
+ddone = "dingdone.main:main"
+dingdone = "dingdone.main:main"
+ding = "dingdone.main:main"
+[tool.hatch.build.targets.wheel]
+packages = ["src/dingdone"]
